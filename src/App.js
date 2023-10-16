@@ -26,6 +26,10 @@ function App() {
     return () => clearTimeout(timer);
   }, []);
 
+  useEffect(() => {
+    document.title = 'Task 6';
+  }, []);
+
   return (
     <Router>
       <Preloader load={load} />
